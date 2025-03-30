@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background: #70cfa0;
 }
 
 nav {
@@ -21,4 +22,34 @@ h1 {
 img {
     max-width: 50%;
     height: auto;
+}
+
+nav a.nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#img2, #img3, #img4{
+    border-radius: 10%;
+    width: 400px;
+    height: 250px;
+}
+
+#img5, #img6, #img7{
+    border-radius: 10%;
+    width: 400px;
+    height: 250px;
+}
+
+#img8, #img9, #img10, #img11{
+    border-radius: 10%;
+    width: 400px;
+    height: 250px;
 }
