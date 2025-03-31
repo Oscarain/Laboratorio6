@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    
     <title>Index</title>
+    <style>
+        /* Estilos para el toast */
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .toast.show {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -13,10 +29,23 @@
         <a href="pagina2.html">Página 2</a>
         <a href="pagina3.html">Página 3</a>
     </nav>
-    <h1>Historia de la programacion</h1>
+    <h1>Historia de la programación</h1>
     <img src="img/img1.jpg" alt="Programacion">
+    <h2>Dilan estuvo aquí</h2>
 
-    <h2> Dilan estuvo aqui</h2>
-    
+    <div id="toast" class="toast">Bienvenido a la página :)</div>
+
+    <script>
+        function showToast() {
+            let toast = document.getElementById("toast");
+            toast.classList.add("show");
+
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+
+        window.onload = showToast;
+    </script>
 </body>
 </html>
